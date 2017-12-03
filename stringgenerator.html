@@ -37,15 +37,13 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <form id="formvalues">
-                <h2>How many words in the string?</h2>
-                <input type="number" name="word-count" step="1" min="1" max="20">
-                <input type="hidden" name="action" value="generate-string">
-                <input type="submit" value="Generate String">
-                <p id="response"></p>
-            </form>
-        </div>
+        <form class="justify-content-center" id="formvalues">
+            <h2 class="pad-bottom-2rem">How many words in the string?</h2>
+            <input type="number" name="word-count" step="1" min="1" max="20">
+            <input type="hidden" name="action" value="generate-string">
+            <input id="submit" type="submit" value="Generate String">
+            <p id="response"></p>
+        </form>
         <hr>
     </div>
 </main>

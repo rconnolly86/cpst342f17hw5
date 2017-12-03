@@ -7,14 +7,25 @@ body {
     padding-top: 3rem;
 }
 
+.pad-bottom-2rem {
+    padding-bottom: 2rem;
+}
+
 .hidden {
     display: none;
 }
 
 #contact {
-    color: blue;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 #response {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
+    font-size: 2rem;
 }
+
+#submit {
+    margin-left: 2rem;
+}
+
