@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact</title>
+    <title>String Generator</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="css/jumbotron.css" rel="stylesheet">
-    <link href="css/googlemap.css" rel="stylesheet">
 </head>
 <body>
 
@@ -33,36 +32,29 @@
 <main role="main">
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">Contact Information</h1>
+            <h1 class="display-3">String Generator</h1>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <p id="contact">
-                    Contact Name: Ray Connolly <br>
-                    Address: 111 E Pearson St, Chicago, IL 60611 <br>
-                    E-Mail: raycOhItsMe@gmail.com <br>
-                    Phone: 630-333-3333
-                </p>
-
-            </div>
-            <div class="col-md-9">
-                <div id="map"></div>
-            </div>
+            <form id="formvalues">
+                <h2>How many words in the string?</h2>
+                <input type="number" name="word-count" step="1" min="1" max="20">
+                <input type="hidden" name="action" value="generate-string">
+                <input type="submit" value="Generate String">
+                <p id="response"></p>
+            </form>
         </div>
         <hr>
     </div>
 </main>
-
-<script src="js/vendor/jquery-3.2.1.slim.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 <script src="js/vendor/popper.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/googlemap.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA-bd-ZP7KzOIJtw9ZjzGYVyE95S-9NLU&callback=initMap">
-</script>
-
+<script src="js/ajax.js"></script>
 </body>
 </html>

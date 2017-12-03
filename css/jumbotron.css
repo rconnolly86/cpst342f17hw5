@@ -11,6 +11,10 @@ body {
     display: none !important;
 }
 
-.contact {
+#contact {
     color: red !important;
+}
+
+#response {
+    padding-top: 3.5rem;
 }
