@@ -2,8 +2,8 @@ $(document).ready(function() {
     $(document).on("submit", "#formvalues", function(e){
         //var data = $(this).serialize() + "& action=generate-string";
         var data = $(this).serialize();
-        var url = "http://ellypost.com/courses/453/ajax-lab/actions.php";
-
+        var url = "https://ellypost.com/courses/453/ajax-lab/actions.php";
+        console.log(data);
         e.preventDefault();
 
         $.post(url, data)
