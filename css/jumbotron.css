@@ -1,0 +1,16 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+}
+
+.pad-top-3rem {
+    padding-top: 3rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.contact {
+
+}
